@@ -1,4 +1,4 @@
- = {5,5,5,5};
-    int m = 2;
-
-    cout <<boo
+for (int i = max(size,size1); i >= 0; i--)
+    {
+        cout <<ressultArr[i] << " ";
+    }

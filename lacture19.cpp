@@ -1,39 +1,39 @@
 #include <iostream>
+#include <vector>
+#include <map>
+#include <algorithm>
 using namespace std;
 
 
-void printArr(int arr[],int size){
-    for (int i = 0; i < size; i++)
+void learnVector(){
+    vector<int> v = {13,34,34,5456,47,34,234,34,45,2343,2345};
+
+    sort(v.begin(),v.end());
+
+    cout <<"Vector Number" <<endl;
+
+    for (int num : v)
     {
-        cout <<arr[i] <<" ";
-    }
-}
-
-
-void insersionShort(int arr[],int size){
-
-    for (int i = 1; i < size; i++)
-    {
-        int temp = arr[i];
-
-        for (int j = i-1; j >= 0; j--)
-        {
-            if(arr[j] > temp){
-                arr[j+1] = arr[j];
-            }
-            else {
-                arr[j+1] = temp;
-                break;
-            }
-        }
-         
+        cout <<num << " ";
     }
     
-    printArr(arr,size);
 }
 
-int main(){
-    int arr[12] = {2,5,3,1,8,4,435,45,346,346,23,234};
+void learnMap(){
+    map<string,int> studentRoll;
 
-    insersionShort(arr,12);
+    studentRoll["altamish"] = 1;
+    studentRoll["rukhsar"] = 2;
+
+    for (auto && student : studentRoll)
+    {
+        cout << student.first << " " << student.second <<endl;
+    }
+    
+}
+
+
+int main(){
+    learnVector();
+    // learnMap();
 }
