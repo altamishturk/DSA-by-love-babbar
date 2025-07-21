@@ -1,16 +1,4 @@
-rt = 0;
-    // // sort 0 and 1
-    // while (start < end)
-    // {
-    //     while (arr[start] != 0 && start < end)
-    //     {
-    //         start++;
-    //     }
-        
-    //     while (arr[end] == 0 && start < end)
-    //     {
-    //         end--;
-    //     }
+ = {5,5,5,5};
+    int m = 2;
 
-    //     swap(arr[start],arr[end]);
-    // }
+    cout <<boo
