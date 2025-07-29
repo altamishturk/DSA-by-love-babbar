@@ -1,4 +1,13 @@
-for (int i = max(size,size1); i >= 0; i--)
+for (int row = 0; row < rowLen; row++)
     {
-        cout <<ressultArr[i] << " ";
+        int start = 0;
+        int end = 2;
+
+        while (start < end)
+        {
+            swap(arr[row][start] ,arr[row][end]);
+
+            start++;
+            end--;
+        }
     }
