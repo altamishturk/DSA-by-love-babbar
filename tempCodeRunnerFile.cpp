@@ -1,3 +1,4 @@
-Test(){
-        name = new char(100);
-    }
+ist(head);
+    cout <<endl;
+    removeDuplicateInUnSorted(head);
+    displayList(head);
